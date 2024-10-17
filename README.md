@@ -9,10 +9,12 @@ This repository contains the official PyTorch implementation of the paper "TALoS
 <ul>
   <li> TALoS is accepted at NeurIPS 2024 🎉.</li>
   <li> Official code and Paper will be released soon! </li>
+  <li> Official code is released on 10/17/2024</li>
+
 </ul>
 
 ## Introduction
-<img src='/assets/qual_kitti.png' width="1000" height="429"/>
+<img src='/assets/qual_kitti.png'>
 
 Our main idea is simple yet effective: 
 **an observation made at one moment could serve as supervision for the SSC prediction at another moment.** 
