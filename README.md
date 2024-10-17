@@ -9,7 +9,7 @@ This repository contains the official PyTorch implementation of the paper "TALoS
 <ul>
   <li> TALoS is accepted at NeurIPS 2024 🎉.</li>
   <li> Official code and Paper will be released soon! </li>
-  <li> Official code is released on 10/17/2024</li>
+  <li> Official code is released on 2024.10.17</li>
 
 </ul>
 
