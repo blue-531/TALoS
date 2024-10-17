@@ -63,8 +63,8 @@ This repository contains the official PyTorch implementation of the paper "TALoS
 ```
 
 ## Test-Time Adaptation
-1. Download the pre-trained models and put them in ```./model_load_dir```.
-2. (Optional) Download pre-trained model results and put them in ```./experiments/baseline``` for comparison.
+1. Download the pre-trained models and put them in ```./model_load_dir```. [[link]](https://drive.google.com/file/d/12jYauPbVodnSA-faBjFucUNgxeGU0pmP/view?usp=drive_link)
+2. (Optional) Download pre-trained model results and put them in ```./experiments/baseline``` for comparison. [[link]](https://drive.google.com/file/d/1gt65t7hkdnnax2v7BALgUsunTaGHRVkh/view?usp=drive_link)
 3. Generate predictions on the Dataset.
 
 ### Validation set
