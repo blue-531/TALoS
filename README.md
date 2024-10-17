@@ -4,7 +4,6 @@ This repository contains the official PyTorch implementation of the paper "TALoS
 ) , [Jihun Kim*](https://jihun1998.github.io/
 ) and [Hyeokjun Kweon*](https://sangrockeg.github.io/
 ).
-
 ## News
 (* denotes equal contribution.)
 <ul>
@@ -12,7 +11,17 @@ This repository contains the official PyTorch implementation of the paper "TALoS
   <li> Official code and Paper will be released soon! </li>
 </ul>
 
+## Introduction
+<img src='/assets/qual_kitti.png' width="1000" height="429"/>
 
+Our main idea is simple yet effective: 
+**an observation made at one moment could serve as supervision for the SSC prediction at another moment.** 
+While traveling through an environment, an autonomous vehicle can continuously observe the overall scene structures, including objects that were previously occluded (or will be occluded later), which are concrete guidances for the adaptation of scene completion. Given the characteristics of the LiDAR sensor, an observation of a point at a specific spatial location at a specific moment confirms not only the occupation at that location itself but also the absence of obstacles along the line of sight from the sensor to that location.
+The proposed method, named 
+**Test-time Adaptation via Line of Sight (TALoS)**
+, is designed to explicitly leverage these characteristics, obtaining self-supervision for geometric completion.
+Additionally, we extend the TALoS framework for semantic recognition, another key goal of SSC, by collecting the reliable regions only among the semantic segmentation results predicted at each moment.
+Further, to leverage valuable future information that is not accessible at the time of the current update, we devise a novel dual optimization scheme involving the model gradually updating across the temporal dimension.
 ## Installation
 
 - PyTorch >= 1.10 
@@ -79,6 +88,8 @@ python run_tta_test.py --do_adapt --do_cont --use_los --use_pgt --sq_num={sequen
 To evaluate test sequences in SemanticKITTI, you should submit the generated predictions to [link](https://codalab.lisn.upsaclay.fr/competitions/7170).
 After generate predictions, prepare your submission in the designated format, as described in the competition page.
 Use the validation script from the [semantic-kitti-api](https://github.com/PRBonn/semantic-kitti-api) to ensure that the folder structure and number of label files in the zip file is correct.
+
+<img src='/assets/benchmark.png' width="500" height="198"/>
 
 
 ## Acknowledgements
