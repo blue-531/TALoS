@@ -156,14 +156,14 @@ def main(args):
     class_strings = semkittiyaml["labels"]
     strides=[int(num) for num in ast.literal_eval(args.stride)]
         
-    _, test_dataset_loader, test_pt_dataset = data_builder.build(dataset_config,
-                                                                  train_dataloader_config,
-                                                                  val_dataloader_config,
-                                                                  grid_size=grid_size,
-                                                                  use_tta=True,
-                                                                  use_multiscan=True,
-                                                                  stride=args.stride,
-                                                                  sq_num=args.sq_num)
+    test_dataset_loader, test_pt_dataset = data_builder.build(dataset_config,
+                                                                train_dataloader_config,
+                                                                val_dataloader_config,
+                                                                grid_size=grid_size,
+                                                                use_tta=True,
+                                                                use_multiscan=True,
+                                                                stride=args.stride,
+                                                                sq_num=args.sq_num)
 
     # Define experiment path
     exp_name = time.strftime('%Y%m%d_%H%M%S', time.localtime(time.time())) + '_' + __file__.replace('run_tta_','').replace('.py','') + args.name
@@ -187,7 +187,7 @@ def main(args):
     baseline_prediction_paths = sorted(glob.glob(args.baseline_preds+'/*.label'))
 
     model_load_path = train_hypers['model_load_path']
-    model_load_path += 'iou37.5557_epoch3.pth'
+    model_load_path += 'pretrained.pth'
     
     model_baseline = model_builder.build(model_config)
     print('Load model from: %s' % model_load_path)
@@ -624,7 +624,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='')
 
     # Sources
-    parser.add_argument('--talos_root', default='/home/user/talos-official/', type=str)
+    parser.add_argument('--talos_root', default='./', type=str)
     parser.add_argument('--config_path', default='config/semantickitti-tta.yaml')
     parser.add_argument('--baseline_perf_txt', default='baseline_performance.txt', type=str)
     parser.add_argument('--baseline_preds', default='experiments/baseline/sequences/08/predictions', type=str)
