@@ -18,7 +18,7 @@ This repository contains the official PyTorch implementation of the paper "TALoS
 </ul>
 
 ## Introduction
-<img src='/assets/qual_kitti.png'>
+<img src='/assets/kitti_qual.png'>
 
 Our main idea is simple yet effective: 
 **an observation made at one moment could serve as supervision for the SSC prediction at another moment.** 
