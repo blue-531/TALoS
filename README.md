@@ -1,6 +1,5 @@
 # [NeurIPS 2024] TALoS: Enhancing Semantic Scene Completion via Test-time Adaptation on the Line of Sight
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/talos-enhancing-semantic-scene-completion-via/3d-semantic-scene-completion-on-semantickitti)](https://paperswithcode.com/sota/3d-semantic-scene-completion-on-semantickitti?p=talos-enhancing-semantic-scene-completion-via)<br/>
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/talos-enhancing-semantic-scene-completion-via/3d-semantic-segmentation-on-semantickitti)](https://paperswithcode.com/sota/3d-semantic-segmentation-on-semantickitti?p=talos-enhancing-semantic-scene-completion-via)<br/>
 This repository contains the official PyTorch implementation of the paper "TALoS: Enhancing Semantic Scene Completion via Test-time Adaptation on the Line of Sight" paper (NeurIPS 2024) by [Hyun-Kurl Jang*](https://blue-531.github.io/
 ) , [Jihun Kim*](https://jihun1998.github.io/
 ) and [Hyeokjun Kweon*](https://sangrockeg.github.io/
