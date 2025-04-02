@@ -8,7 +8,7 @@ This repository contains the official PyTorch implementation of the paper "TALoS
 (* denotes equal contribution.)
 
 [[Paper]](https://arxiv.org/abs/2410.15674)
-<img src="./asset/SemKITTI.gif"  />
+<img src="./assets/SemKITTI.gif"  />
 ## News
 <ul>
   <li> TALoS is accepted at NeurIPS 2024 🎉🎉.</li>
