@@ -79,9 +79,9 @@ Further, to leverage valuable future information that is not accessible at the t
 ```
 
 ## Test-Time Adaptation
-1. Download the pre-trained models and put them in ```./model_load_dir```. [[link]](https://drive.google.com/file/d/12jYauPbVodnSA-faBjFucUNgxeGU0pmP/view?usp=drive_link)
-2. (Optional) Download pre-trained model results and put them in ```./experiments/baseline``` for comparison. [[link]](https://drive.google.com/file/d/1gt65t7hkdnnax2v7BALgUsunTaGHRVkh/view?usp=drive_link)
-3. Generate predictions on the Dataset.
+1. **Download SCPNet Pre-trained Models**: Download the weights from this [[link]](https://drive.google.com/file/d/12jYauPbVodnSA-faBjFucUNgxeGU0pmP/view?usp=drive_link) and place them in the `./model_load_dir` directory.
+2. **(Optional) Baseline Results**: Download the comparison results from this [[link]](https://drive.google.com/file/d/1gt65t7hkdnnax2v7BALgUsunTaGHRVkh/view?usp=drive_link) and place them in `./experiments/baseline`.
+3. **Generate Predictions**: Run the script to generate predictions on the dataset.
 
 ### Validation set
 ```
@@ -101,3 +101,17 @@ Use the validation script from the [semantic-kitti-api](https://github.com/PRBon
 
 ## Acknowledgements
 We thanks for the open source project [SCPNet](https://github.com/SCPNet/Codes-for-SCPNet).
+
+## Citation
+
+If you use the codes, please cite the following publication:
+```
+@article{jang2024talos,
+  title={TALoS: Enhancing semantic scene completion via test-time adaptation on the line of sight},
+  author={Jang, Hyun-Kurl and Kim, Jihun and Kweon, Hyeokjun and Yoon, Kuk-Jin},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={74211--74232},
+  year={2024}
+}
+```
